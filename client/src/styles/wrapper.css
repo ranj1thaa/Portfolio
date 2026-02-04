@@ -1,0 +1,102 @@
+/* Wraper.css */
+
+/* General section styling */
+section {
+  padding: 0px 60px 40px 60px;
+  scroll-margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 50px 20px;
+  }
+}
+
+/* Section headings */
+section h2 {
+  font-family: "syne", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  background: linear-gradient(
+    90deg,
+    #FF4D6D 0%,
+    #BD3EB2 25%,
+    #7B2FF7 50%,
+    #2F86F7 75%,
+    #2FF7ED 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 768px) {
+  section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+}
+
+/* Section content */
+section p, section li {
+  color: white;
+  font-family: "inter", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Responsive grid for projects or skills */
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+@media (max-width: 992px) {
+  .section-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .section-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+/* Buttons */
+button, .btn {
+  background: linear-gradient(
+    90deg,
+    #b9727f 0%,
+    #f3b2ee 25%,
+    #ece4f9 50%,
+    #d0e0f6 75%,
+    #bddad8 100%
+  );
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button:hover, .btn:hover {
+  transform: scale(1.05);
+}
+
+/* Image responsiveness */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Small section spacing for mobile */
+@media (max-width: 576px) {
+  section {
+    padding: 40px 15px;
+  }
+}

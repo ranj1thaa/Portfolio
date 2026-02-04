@@ -1,0 +1,85 @@
+#home {
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  position: relative;
+  overflow: hidden;
+  background: #1A1A2E;
+  color: white;
+}
+
+#home h1 {
+  font-family: 'syne', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+#home h3 {
+  font-family: 'inter', sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+#home .btn {
+  border-radius: 6px;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+}
+
+#home .btn-info {
+  color: black;
+  border: none;
+}
+
+#home .btn-outline-light {
+  border-color: white;
+  color: white;
+}
+
+#home .btn-outline-light:hover {
+  background-color: white;
+  color: black;
+}
+
+#home a {
+  transition: transform 0.2s;
+}
+
+#home a:hover {
+  transform: scale(1.1);
+}
+
+#home svg {
+  opacity: 0.15;
+}
+
+@media (max-width: 768px) {
+  #home h1 {
+    font-size: 1.5rem;
+  }
+
+  #home h3 {
+    font-size: 1rem;
+  }
+
+  #home .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  #home .mt-4.d-flex {
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 576px) {
+  #home {
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+
+  #home img {
+    width: 100% !important;
+  }
+}

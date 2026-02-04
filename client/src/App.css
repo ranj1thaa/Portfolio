@@ -1,0 +1,38 @@
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: rgb(255, 252, 252);
+  color: white;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit; 
+  text-decoration: none;
+}
+
+.App {
+  padding-top: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar, .navbar .nav-link {
+  color: white !important;
+}
+
+.navbar-collapse {
+  background-color: black; 
+}
+
+@media (max-width: 768px) {
+  .navbar .nav-link {
+    padding: 0.5rem 1rem;
+    color: white !important;
+  }
+}

@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/syne/500.css";
+@import "@fontsource/syne/600.css";
+@import "@fontsource/syne/700.css";
+
+:root {
+  --font-body: "Inter", sans-serif;
+  --font-heading: "Syne", sans-serif;
+  --color-gradient: linear-gradient(
+    90deg,
+    #b9727f 0%,
+    #f3b2ee 25%,
+    #ece4f9 50%,
+    #d0e0f6 75%,
+    #bddad8 100%
+  );
+}
+
+@layer base {
+  html, body {
+    font-family: var(--font-body);
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: inherit; 
+    text-decoration: none;
+  }
+
+  section {
+    scroll-margin-top: 100px;
+  }
+
+  .gradient-bottom {
+    background-image: var(--color-gradient);
+    background-repeat: no-repeat;
+    background-position: 0 90%;
+    background-size: 100% 2%;
+    font-size: 27px;
+    font-family: var(--font-heading);
+  }
+}
+
+.navbar, .navbar .nav-link {
+  color: white !important;
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    background-color: black; 
+  }
+
+  .navbar .nav-link {
+    padding: 0.5rem 1rem;
+    color: white !important;
+  }
+}
