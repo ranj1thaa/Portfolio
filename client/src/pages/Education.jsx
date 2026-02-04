@@ -83,7 +83,7 @@ export default function EducationCert() {
         My academic journey and certifications reflect my dedication toward learning cloud & real-world development.
       </p>
 
-      <div ref={track} className="flex gap-12 md:gap-20 w-max flex-wrap md:flex-nowrap">
+      <div ref={track} className="flex gap-12 md:gap-20 w-max flex-wrap md:flex-nowrap edu-space">
         <div ref={flairWrapper} className="relative min-w-[100vw] h-[500px] md:h-[800px] overflow-visible">
           <img src={assets.f3} style={{width:"120px"}} className="edu-flair absolute z-[20] bottom-10 left-1/2 -translate-x-1/2 pointer-events-none" />
           <img src={assets.flair1} style={{width:"100px"}} className="edu-flair absolute top-[20%] left-[42%]" />
