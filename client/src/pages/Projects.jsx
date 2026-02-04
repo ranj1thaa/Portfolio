@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import projects from '../utils/project';
+import projects from '../utils/projects';
 import '../styles/projects.css';
 
 const container = {
