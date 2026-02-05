@@ -69,7 +69,7 @@ function Home() {
               <Button variant="info" href="#projects" className="me-3 fw-bold">
                 View My Work
               </Button>
-              <Button variant="outline-light" href="/Ranjitha_Resume.pdf" target="_blank">
+              <Button variant="outline-light" href="/Ranjitha_CV.pdf" target="_blank">
                 Download CV
               </Button>
             </div>
